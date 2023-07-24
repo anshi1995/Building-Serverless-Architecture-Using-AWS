@@ -1,4 +1,4 @@
-# Building-Serverless-Architecture-Using-AWS
+# Building Serverless Architecture Using AWS
 The project aims to build a serverless architecture on AWS, leveraging various services to create an efficient and scalable system for handling CRUD operations (Create, Read, Update, Delete) through HTTP APIs. The key resources involved in this architecture are Amazon API Gateway, Lambda functions, and DynamoDB.
 
 <h3>1. Amazon API Gateway:</h3>
@@ -16,4 +16,16 @@ To deploy the serverless architecture successfully, the project includes provisi
 <h3>5. Lambda Layers using PynamoDB:</h3>
 Lambda Layers are used to share common code across multiple Lambda functions. This project uses Lambda Layers to integrate PynamoDB, an object relationship mapper for DynamoDB. PynamoDB simplifies communication with DynamoDB by abstracting away low-level details and providing a more convenient way to interact with the database. This promotes code reusability and ensures consistent interactions with the data stored throughout the Lambda functions.
 <br><br>
+
+<h2>Architecture:</h2>
+This serverless architecture contains HTTP APIs where every single endpoint is backed by a separate lambda function. These lambda functions communicate with DynamoDB database, which is a serverless NoSQL database. Finally, the lambda layers are used to share codes using PynamoDB, an object relationship mapper, which is a convenient way to communicate with DynamoDB. 
+We perform the following tasks in order to deploy this architecture:
+1.	Create Lambda functions for CRUD (create, read, update, delete) actions.
+2.	Create Amazon API gateway HTTP API.
+3.	Create DynamoDB table.
+4.	Provision the environment and user permissions.
+5.	Create lambda layers using PynamoDB.
+
 The project's serverless architecture provides a cost-effective, highly available, and scalable solution for handling CRUD operations through HTTP APIs. It efficiently manages resources, reduces the need for server maintenance, and simplifies the database interactions using PynamoDB through Lambda Layers.
+<br>
+<img width="468" alt="image" src="https://github.com/anshi1995/Building-Serverless-Architecture-Using-AWS/assets/101793943/68d001be-b6c2-49c5-aa9c-7be5234b5b39">
