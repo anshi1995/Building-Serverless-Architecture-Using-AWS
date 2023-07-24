@@ -20,12 +20,14 @@ Lambda Layers are used to share common code across multiple Lambda functions. Th
 <h2>Architecture:</h2>
 This serverless architecture contains HTTP APIs where every single endpoint is backed by a separate lambda function. These lambda functions communicate with DynamoDB database, which is a serverless NoSQL database. Finally, the lambda layers are used to share codes using PynamoDB, an object relationship mapper, which is a convenient way to communicate with DynamoDB. 
 We perform the following tasks in order to deploy this architecture:
-1.	Create Lambda functions for CRUD (create, read, update, delete) actions.
-2.	Create Amazon API gateway HTTP API.
-3.	Create DynamoDB table.
-4.	Provision the environment and user permissions.
-5.	Create lambda layers using PynamoDB.
+
+* Create Lamda function for CRUD (Create, Read, Update, Delete) actions.
+* Create Amazon API gateway HTTP API.
+* Create DynamoDB table.
+* Provision the environment and user permissions.
+* Create lambda layers using PynamoDB.
 
 The project's serverless architecture provides a cost-effective, highly available, and scalable solution for handling CRUD operations through HTTP APIs. It efficiently manages resources, reduces the need for server maintenance, and simplifies the database interactions using PynamoDB through Lambda Layers.
 <br>
+
 <img width="468" alt="image" src="https://github.com/anshi1995/Building-Serverless-Architecture-Using-AWS/assets/101793943/68d001be-b6c2-49c5-aa9c-7be5234b5b39">
