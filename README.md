@@ -27,7 +27,6 @@ We perform the following tasks in order to deploy this architecture:
 * Provision the environment and user permissions.
 * Create lambda layers using PynamoDB.
 
-The project's serverless architecture provides a cost-effective, highly available, and scalable solution for handling CRUD operations through HTTP APIs. It efficiently manages resources, reduces the need for server maintenance, and simplifies the database interactions using PynamoDB through Lambda Layers.
-<br>
-
 <img width="468" alt="image" src="https://github.com/anshi1995/Building-Serverless-Architecture-Using-AWS/assets/101793943/68d001be-b6c2-49c5-aa9c-7be5234b5b39">
+<br><br>
+The project's serverless architecture provides a cost-effective, highly available, and scalable solution for handling CRUD operations through HTTP APIs. It efficiently manages resources, reduces the need for server maintenance, and simplifies the database interactions using PynamoDB through Lambda Layers.
